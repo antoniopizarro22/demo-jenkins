@@ -1,5 +1,7 @@
 pipeline {
-    agent { docker { image 'python:3.10.7-alpine' } }
+    agent {
+        echo "Hello from agent"
+     }
     stages {
         stage('build') {
             steps {
